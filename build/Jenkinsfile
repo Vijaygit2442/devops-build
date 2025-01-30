@@ -13,7 +13,8 @@ pipeline {
                sh 'echo "Docker Build"'
                sh 'pwd'
                sh 'cd build'
-               sh 'npm install -g serve'
+               sh 'ls'
+               //sh 'npm install -g serve'
                // sh 'cd coit-backend1 && docker build -t amol1996/coit-backend1-92234832:v2 .'
                // sh 'docker images' 
             }
