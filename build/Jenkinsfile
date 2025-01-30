@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                //sh 'cd devops-build/build'
-               sh 'echo "print build"
+               sh 'echo "print build"'
             }
         }
         stage('docker-build') {
