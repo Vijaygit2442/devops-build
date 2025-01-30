@@ -22,7 +22,7 @@ pipeline {
         stage('docker-push') {
             steps {
                 sh 'echo "Docker Deploy"'
-                sh 'serve -s build'
+                //sh 'serve -s build'
                 // sh 'echo "pushing docker image"'
                 // sh 'docker push amol1996/coit-backend1-92234832:v2'
             }
