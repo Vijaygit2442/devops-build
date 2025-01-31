@@ -16,7 +16,6 @@ pipeline {
                sh 'ls'
                sh 'pwd'
                sh 'cd build'
-               sh 'cd /'
                sh 'pwd'
                //sh 'npm install -g serve'
                // sh 'cd coit-backend1 && docker build -t amol1996/coit-backend1-92234832:v2 .'
