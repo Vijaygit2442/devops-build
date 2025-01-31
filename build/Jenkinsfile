@@ -15,6 +15,7 @@ pipeline {
                sh 'cd build'
                sh 'ls'
                sh 'pwd'
+               sh 'cd build'
                sh 'cd /'
                sh 'pwd'
                //sh 'npm install -g serve'
