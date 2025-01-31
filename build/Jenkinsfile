@@ -21,6 +21,9 @@ pipeline {
                // sh 'cd coit-backend1 && docker build -t amol1996/coit-backend1-92234832:v2 .'
                sh 'docker images' 
                sh 'docker ps'
+               sh 'docker build -t my-nginx-app .'
+               sh 'docker run -d -p 80:80 my-nginx-app'
+               sh 'docker ps'
             }
         }
         stage('docker-push') {
