@@ -15,9 +15,11 @@ pipeline {
                sh 'cd build'
                sh 'ls'
                sh 'pwd'
+               sh 'cd /'
+               sh 'pwd'
                //sh 'npm install -g serve'
                // sh 'cd coit-backend1 && docker build -t amol1996/coit-backend1-92234832:v2 .'
-               sh 'docker images' 
+               //sh 'docker images' 
             }
         }
         stage('docker-push') {
