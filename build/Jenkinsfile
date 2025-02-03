@@ -15,7 +15,7 @@ pipeline {
                sh 'cd build'
                sh 'ls'
                sh 'pwd'
-               sh 'cd build'
+               sh 'cd /var/lib/jenkins/workspace/project-CI-CD/build# '
                sh 'pwd'
                sh 'chmod +x build.sh deploy.sh'
                sh 'docker-compose down'
