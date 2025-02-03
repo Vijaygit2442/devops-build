@@ -36,7 +36,7 @@ pipeline {
             steps {
                 sh 'echo "Docker Push"'
                 sh 'docker tag project-ci-cd2-react-app vijayr2024/reactecommerce:latest'
-                sh 'docker push -t vijayr2024/reactecommerce:latest'
+                sh 'docker push vijayr2024/reactecommerce:latest'
             }
     }
 }
