@@ -44,7 +44,7 @@ pipeline {
         stage('docker-push') {
             steps {
                 sh 'echo "Docker Push"'
-                sh 'docker tag project-ci-cd2-react-app vijayr2024/reactecommerce:latest'
+                sh 'docker tag devops-guvi-project-dev-react-app vijayr2024/reactecommerce:latest'
                 sh 'docker push vijayr2024/reactecommerce:latest'
             }
     }
