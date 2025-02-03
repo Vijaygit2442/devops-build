@@ -19,7 +19,7 @@ pipeline {
                sh 'pwd'
                sh 'chmod +x ./build/build.sh ./build/deploy.sh'
                sh 'docker-compose down'
-               sh 'docker stop $(docker ps)'
+               //sh 'docker stop $(docker ps)'
                sh 'docker rm $(docker ps -a -q)'
                //sh 'npm install -g serve'
                // sh 'cd coit-backend1 && docker build -t amol1996/coit-backend1-92234832:v2 .'
