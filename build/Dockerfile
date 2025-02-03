@@ -5,7 +5,7 @@ FROM nginx:latest
 WORKDIR /usr/share/nginx/html
 
 # Copy static website files (HTML, CSS, JS) to the container
-COPY ./ /usr/share/nginx/html
+COPY ./build /usr/share/nginx/html
 
 # Copy a custom Nginx configuration file (if needed)
 # COPY ./nginx.conf /etc/nginx/nginx.conf
