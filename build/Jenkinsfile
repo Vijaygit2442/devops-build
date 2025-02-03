@@ -2,8 +2,8 @@ pipeline {
     agent any
     environment {
         DOCKER_REGISTRY = "https://hub.docker.com/"
-        DOCKER_USERNAME = credentials('1-username') // Jenkins credentials ID
-        DOCKER_PASSWORD = credentials('dckr_pat_3-rTjN-OATYlCTaTh5yg-APdUsw') // Jenkins credentials ID
+        DOCKER_USERNAME = credentials('Dockerhub-cred-username') // Jenkins credentials ID
+        DOCKER_PASSWORD = credentials('Dockerhub-cred-password') // Jenkins credentials ID
            }
     stages {
         stage('Login to Docker Registry') {
