@@ -9,11 +9,10 @@ pipeline {
         stage('Login to Docker Registry') {
             steps {
                 script {
-                    sh "echo $DOCKER_PASSWORD | docker login $DOCKER_REGISTRY --username $DOCKER_USERNAME --password-stdin"
+                sh "echo $DOCKER_PASSWORD | docker login $DOCKER_REGISTRY --username $DOCKER_USERNAME --password-stdin"
                 }
             }
         }
-    stages {
         stage('Build') {
             steps {
                //sh 'cd devops-build/build'
