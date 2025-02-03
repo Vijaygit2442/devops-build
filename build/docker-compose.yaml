@@ -1,0 +1,11 @@
+version: '2.32.4'
+
+services:
+  react-app:
+    container_name: react-ecommerce-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    restart: unless-stopped
