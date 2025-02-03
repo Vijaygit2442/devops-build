@@ -26,7 +26,6 @@ pipeline {
                //sh 'docker stop $(docker ps -q)'
                //sh 'docker build -t my-nginx-app:latest ./build'
                //sh 'docker run -d -p 80:80 my-nginx-app:v1'
-               sh 'chmod +x build.sh deploy.sh'
                sh 'docker-compose up --build -d' 
                sh 'docker ps'
             }
