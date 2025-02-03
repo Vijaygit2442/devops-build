@@ -33,7 +33,7 @@ pipeline {
                //sh 'npm install -g serve'
                sh 'docker images' 
                sh 'docker ps'
-               sh './stopcontainer'
+               sh './stopcontainer.sh'
                //sh 'docker stop $(docker ps -q)'
                //sh 'docker build -t my-nginx-app:latest ./build'
                //sh 'docker run -d -p 80:80 my-nginx-app:v1'
