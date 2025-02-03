@@ -22,6 +22,7 @@ pipeline {
                sh 'docker images' 
                sh 'docker ps'
                sh 'docker build -t my-nginx-app:v1 .'
+               sh 'docker images'
                sh 'docker run -d -p 80:80 my-nginx-app:v1'
                sh 'docker ps'
             }
