@@ -31,7 +31,6 @@ pipeline {
                //sh 'docker stop $(docker ps)'
                //sh 'docker rm $(docker ps -a -q)'
                //sh 'npm install -g serve'
-               // sh 'cd coit-backend1 && docker build -t amol1996/coit-backend1-92234832:v2 .'
                sh 'docker images' 
                sh 'docker ps'
                //sh 'docker stop $(docker ps -q)'
