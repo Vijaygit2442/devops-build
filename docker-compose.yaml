@@ -4,7 +4,7 @@ services:
   react-app:
     container_name: react-ecommerce-container
     build:
-      context: .
+      context: ./build
       dockerfile: ./build/Dockerfile
     ports:
       - "80:80"
