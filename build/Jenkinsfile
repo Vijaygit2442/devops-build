@@ -17,25 +17,20 @@ pipeline {
                sh 'pwd'
                sh 'cd build'
                sh 'pwd'
+               sh 'chmod +x build.sh deploy.sh'
+               sh 'docker-compose down'
                //sh 'npm install -g serve'
                // sh 'cd coit-backend1 && docker build -t amol1996/coit-backend1-92234832:v2 .'
                sh 'docker images' 
                sh 'docker ps'
-               sh 'docker stop $(docker ps -q)'
-               sh 'docker build -t my-nginx-app:latest ./build'
-               sh 'docker images'
+               //sh 'docker stop $(docker ps -q)'
+               //sh 'docker build -t my-nginx-app:latest ./build'
                //sh 'docker run -d -p 80:80 my-nginx-app:v1'
+               sh 'chmod +x build.sh deploy.sh'
+               sh 'docker-compose up --build -d' 
                sh 'docker ps'
             }
         }
-        stage('docker-run') {
-            steps {
-                sh 'docker run -d -p 80:80 my-nginx-app:v1'
-                //sh 'serve -s build'
-                // sh 'echo "pushing docker image"'
-                // sh 'docker push amol1996/coit-backend1-92234832:v2'
-            }
-    }
         stage('docker-push') {
             steps {
                 sh 'echo "Docker Deploy"'
