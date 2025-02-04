@@ -13,7 +13,6 @@ pipeline {
         }
         stage('Build') {
             steps {
-               //sh 'cd devops-build/build'
                sh 'echo "print build"'
             }
         }
