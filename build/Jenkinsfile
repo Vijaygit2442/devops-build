@@ -52,14 +52,14 @@ pipeline {
      post {
         success {
             emailext(
-                to: 'recipient@example.com',
+                to: 'vijayaragavan.b24@gmail.com',
                 subject: "SUCCESS: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
                 body: "Good news! The job was successful: ${env.BUILD_URL}"
             )
         }
         failure {
             emailext(
-                to: 'recipient@example.com',
+                to: 'vijayaragavan.b24@gmail.com',
                 subject: "FAILURE: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
                 body: "Unfortunately, the job failed: ${env.BUILD_URL}"
             )
