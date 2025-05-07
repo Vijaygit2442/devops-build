@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   react-app:
-    container_name: react-ecommerce-container
+    container_name: email_demo_ci_react-app
     build:
       context: .
       dockerfile: ./build/Dockerfile
